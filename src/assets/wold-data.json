@@ -1,0 +1,70 @@
+{
+    "type": [
+        { "name": "Terrestrial", "weight": 50 },
+        { "name": "Gas Giant", "weight": 70 },
+        { "name": "Irregular", "weight": 85 },
+        { "name": "Satelitte", "weight": 90 },
+        { "name": "Asteroid", "weight": 95 },
+        { "name": "Colony Ship", "weight": 97 },
+        { "name": "Space Station", "weight": 100 }
+    ],
+    "atmo": [
+        { "name": "Normal", "weight": 50 },
+        { "name": "None", "weight": 60 },
+        { "name": "Thin", "weight": 75 },
+        { "name": "Thick", "weight": 90 },
+        { "name": "Corrosive / Toxic", "weight": 100 }
+    ],
+    "gravity": [
+        { "name": "Standard", "weight": 50 },
+        { "name": "Zero Gravity", "weight": 60 },
+        { "name": "Low", "weight": 75 },
+        { "name": "High", "weight": 90 },
+        { "name": "Extreme", "weight": 100 }
+    ],
+    "biome": [
+        { "name": "Airborne", "weight": 1 },
+        { "name": "Aquatic", "weight": 2 },
+        { "name": "Arctic", "weight": 3 },
+        { "name": "Desert", "weight": 4 },
+        { "name": "Forest", "weight": 5 },
+        { "name": "Marsh", "weight": 6 },
+        { "name": "Mountain", "weight": 7 },
+        { "name": "Plains", "weight": 8 },
+        { "name": "Space", "weight": 9 },
+        { "name": "Subterranean", "weight": 10 },
+        { "name": "Urban", "weight": 11 },
+        { "name": "Weird", "weight": 12 }
+    ],
+    "accord": [
+        { "name": "Low ", "weight": 1 },
+        { "name": "Medium", "weight": 2 },
+        { "name": "High", "weight": 3 }
+    ],
+    "alignement": [
+        { "name": "Lawful Good", "weight": 1 },
+        { "name": "Neutral Good", "weight": 2 },
+        { "name": "Chaotic Good", "weight": 3 },
+        { "name": "Lawful Neutral", "weight": 4 },
+        { "name": "Neutral", "weight": 5 },
+        { "name": "Chaotic Neutral", "weight": 6 },
+        { "name": "Lawful Evil", "weight": 7 },
+        { "name": "Neutral Evil", "weight": 8 },
+        { "name": "Chaotic Evil", "weight": 9 }
+    ],
+    "magic": [
+        { "name": "Low ", "weight": 1 },
+        { "name": "Medium", "weight": 2 },
+        { "name": "High", "weight": 3 }
+    ],
+    "religion": [
+        { "name": "Low ", "weight": 1 },
+        { "name": "Medium", "weight": 2 },
+        { "name": "High", "weight": 3 }
+    ],
+    "technology": [
+        { "name": "Low ", "weight": 1 },
+        { "name": "Medium", "weight": 2 },
+        { "name": "High", "weight": 3 }
+    ]
+}
