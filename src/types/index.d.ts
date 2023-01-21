@@ -1,4 +1,5 @@
 export type POIProps = {
+    name?: string | undefined;
     type?: string | undefined;
     atmo?: string | undefined;
     gravity?: string | undefined;
