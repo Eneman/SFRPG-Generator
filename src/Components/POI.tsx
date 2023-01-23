@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { POIProps } from '../types';
 import planetNames from '../assets/planetNames.json';
-import cheerio from 'cheerio';
 
 function getPlanetName(): string {
+    console.log('hi');
     let nameSize: number = Math.floor(Math.random() * 11);
     let nameParts: string[] = [];
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 7; i++) {
         nameParts.push(planetNames.name[i][Math.floor(Math.random() * planetNames.name[i].length)]);
     }
     while (nameParts[0] === nameParts[2]) {
@@ -18,7 +18,7 @@ function getPlanetName(): string {
     }
     while (nameParts[0] === nameParts[3]) {
         nameParts.splice(
-            2,
+            3,
             1,
             planetNames.name[3][Math.floor(Math.random() * planetNames.name[3].length)],
         );
@@ -46,10 +46,11 @@ function getPlanetName(): string {
 }
 
 export function POI(props: POIProps) {
+    const [planetName, setPlanetName] = useState(getPlanetName());
     return (
         <div className="poi flex-none flex-shrink-0 basis-64 rounded-xl border-4 border-black bg-slate-600 p-3">
             <h1 className="planetName mb-5 text-center text-4xl font-bold capitalize">
-                {getPlanetName()}
+                {planetName}
             </h1>
             <ul className="poi">
                 <li className="type">Type: {props.type}</li>

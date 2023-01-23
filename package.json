@@ -7,8 +7,10 @@
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
+        "preghdeploy": "npm run build",
+        "ghdeploy": "gh-pages -d dist",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist",
+        "deploy": "surge dist/ --domain sfrpg-generator.surge.sh",
         "preview": "vite preview"
     },
     "dependencies": {
