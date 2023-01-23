@@ -3,13 +3,15 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
+    "homepage": "https://eneman.github.io/sfrpg-generator/",
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist",
         "preview": "vite preview"
     },
     "dependencies": {
-        "axios": "^1.2.3",
         "cheerio": "^1.0.0-rc.12",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
